@@ -1,0 +1,1 @@
+# erp-detail-single-page
