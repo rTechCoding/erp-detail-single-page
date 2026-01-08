@@ -1,0 +1,104 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
+
+        :root {
+            --primary-color: #2563eb;
+            --slate-600: #475569;
+            --slate-900: #0f172a;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--slate-900);
+            overflow-x: hidden;
+            background-color: #fff;
+        }
+
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+        }
+
+        /* Custom Styles to match original UI */
+        .bg-pattern {
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 100vh;
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 40px 40px;
+            mask-image: linear-gradient(to bottom, white, transparent);
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .soft-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 24px;
+            padding: 2rem;
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+
+        .soft-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        .feature-icon {
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .stat-badge {
+            background: #f1f5f9;
+            color: var(--primary-color);
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border: 1px solid #e2e8f0;
+            display: inline-block;
+        }
+
+        .quote-box {
+            border-left: 4px solid var(--primary-color);
+            padding-left: 2rem;
+        }
+
+        .rTechCoding-gradient {
+            background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+            border: 2px solid #dbeafe;
+        }
+
+        .footer-cta {
+            background-color: #0f172a;
+            border-radius: 48px;
+            padding: 5rem 2rem;
+            position: relative;
+            overflow: hidden;
+            color: white;
+        }
+
+        .nav-link {
+            color: var(--slate-600);
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
